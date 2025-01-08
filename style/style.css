@@ -1,0 +1,174 @@
+@charset "UTF-8";
+@font-face {
+    font-family: android;
+    src: url(../fontes/idroid.otf);
+    
+}
+@font-face {
+    font-family: padrao;
+    src: url(../fontes/Philosopher-Regular.ttf);
+}
+:root{
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+    --fonte-padrao: arial, verdana, helvetica,sans-serif;
+    --fonte-destaque: android;
+    --fonte-1: padrao;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    font-family:var(--fonte-padrao);
+    background-image: linear-gradient(to bottom, var(--cor3),var(--cor5));
+    min-height: 120px;
+    text-align: center;
+    padding-top: 40px;
+    
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+#credito{
+    font-size: 10px;
+    text-align: right;
+    font-style: italic;
+    margin-right:2px;
+    margin-top: 2px;
+}
+header>h1{
+    color: white;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.753);
+}
+header>p{
+    color: white;
+    max-width: 600px;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.753);
+}
+nav{
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow:0px 7px 9px rgba(0, 0, 0, 0.678) ;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    font-weight: bold;
+}
+nav a:hover{
+    border-radius: 10px;
+    background-color: var(--cor3);
+    color: var(--cor5);
+    transition-duration: 0.6s;
+}
+body{
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+main{
+    background-color: white;
+    min-width: 320px;
+    max-width: 750px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.37);
+}
+main iframe{
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+main div{
+    background-color: var(--cor5);
+    padding: 2px;
+    margin-bottom: 10px;
+}
+main h1{
+    color: var(--cor5);
+    font-family: android ;
+    background-image: linear-gradient(to right, var(--cor0),var(--cor2));
+    margin-left: 0px;
+    margin-right: 0px;
+}
+main h2{
+    color: var(--cor5);
+    font-family: android;
+    font-size: 1.2em;
+    background-image: linear-gradient(to right,var(--cor1),transparent);
+    text-indent: 1em;
+}
+main p{
+    text-indent: 2em;
+    margin: 15px 0px;
+    text-align: justify;
+    line-height: 1.5em;
+}
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+main a:hover{
+    background-color: var(--cor1);
+    border-radius: 2px;
+    transition-duration: 1s;
+}
+main a:visited{
+    color: black;
+}
+footer{
+    background-color: var(--cor5);
+    color: white;
+
+}
+main img{
+    width: 100%;
+}
+main img.pequena{
+    max-width: 300px;
+    display: block;
+    margin: auto;
+}
+aside{
+    background-color: var(--cor0);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.233);
+}
+aside ul{
+    list-style-type:square;
+    list-style-position: inside;
+    columns: 2;
+}
+aside h3{
+    background-color: var(--cor5);
+    color: white;
+    padding: 5px;
+    margin:-10px -10px 0px -10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+footer{
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
